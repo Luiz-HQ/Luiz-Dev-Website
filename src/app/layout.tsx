@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luiz Developer",
+  title: "Luiz.Dev",
   description:
     "Luiz Henrique - Full Stack Developer Website - Transforming ideas into robust and scalable digital solutions.",
 };
