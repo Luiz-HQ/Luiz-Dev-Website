@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 
 ## ✨ Live Demo
 
-Explore o portfólio em funcionamento aqui: [**luizdev.vercel.app**](https://luizdev.vercel.app) 
+Explore o portfólio em funcionamento aqui: "em breve"
 
 ## 📸 Visão Geral (Hero Section)
 
