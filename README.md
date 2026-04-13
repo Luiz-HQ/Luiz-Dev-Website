@@ -1,4 +1,4 @@
-# 🚀 Luiz Henrique - Full Stack Developer Portfolio
+# 🚀 Luiz Henrique - Full Stack Developer Portfólio
 
 Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e experiência como Desenvolvedor Full Stack, com foco em tecnologias modernas e uma experiência de usuário intuitiva e responsiva.
 
