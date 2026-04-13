@@ -14,7 +14,7 @@ Explore o portfólio em funcionamento aqui: "em breve"
 ## 🌟 Principais Features
 
 - **Design Moderno e Responsivo:** Layout adaptável a qualquer dispositivo (desktop, tablet, mobile).
-- **Animação ASCII Dinâmica:** Uma animação de "chuva binária" interativa na seção "About Me", adicionando um toque tecnológico único.
+- **Animação ASCII Dinâmica:** Uma animação de "chuva" interativa na seção "About Me", adicionando um toque tecnológico único.
 - **Galeria de Projetos Interativa:** Apresentação visual dos principais projetos com detalhes, tecnologias utilizadas e links para demo e GitHub.
 - **Formulário de Contato Profissional:** Facilita o contato direto, com validação e proteção contra spam (Rate Limiting).
 - **Navegação Suave:** Experiência de usuário otimizada com rolagem suave entre as seções.
