@@ -4,7 +4,7 @@ Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresent
 
 ## ✨ Live Demo
 
-Explore o portfólio em funcionamento aqui: "em breve"
+Explore o portfólio em funcionamento aqui: <a href="https://luiz-dev-website.vercel.app/" target="blank">https://luiz-dev-website.vercel.app/</a>
 
 ## 📸 Visão Geral (Hero Section)
 
@@ -36,7 +36,7 @@ Este portfólio foi construído utilizando uma stack robusta e moderna:
 
 Estou sempre aberto a novas conexões e oportunidades. Sinta-se à vontade para entrar em contato:
 
-- **LinkedIn:** https://www.linkedin.com/in/luizhenriquecomunicador/
+- **LinkedIn:** <a href="https://www.linkedin.com/in/luizhenriquecomunicador/" target="blank">https://www.linkedin.com/in/luizhenriquecomunicador/</a>
 - **Email:** [luizhn1703@gmail.com](mailto:luizhn1703@gmail.com)
 
 ---
