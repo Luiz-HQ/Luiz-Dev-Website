@@ -36,7 +36,7 @@ Este portfólio foi construído utilizando uma stack robusta e moderna:
 
 Estou sempre aberto a novas conexões e oportunidades. Sinta-se à vontade para entrar em contato:
 
-- **LinkedIn:** [LinkedIn]https://www.linkedin.com/in/luizhenriquecomunicador/
+- **LinkedIn:** https://www.linkedin.com/in/luizhenriquecomunicador/
 - **Email:** [luizhn1703@gmail.com](mailto:luizhn1703@gmail.com)
 
 ---
