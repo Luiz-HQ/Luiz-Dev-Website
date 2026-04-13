@@ -31,7 +31,7 @@ Este portfólio foi construído utilizando uma stack robusta e moderna:
 - **Resend:** Plataforma para envio de e-mails transacionais (formulário de contato).
 - **ASCII Animation:** Implementação customizada de animação ASCII para um toque visual único.
 - **Rate Limiting:** Proteção contra spam no formulário de contato.
-- Vercel: Plataforma de deploy e hospedagem serverless de alta performance.
+- **Vercel:** Plataforma de deploy e hospedagem serverless de alta performance.
 - **Git & GitHub:** Controle de versão e hospedagem do código-fonte.
 
 Estou sempre aberto a novas conexões e oportunidades. Sinta-se à vontade para entrar em contato:
