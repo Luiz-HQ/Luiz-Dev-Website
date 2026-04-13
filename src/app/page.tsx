@@ -117,7 +117,6 @@ export default function Home() {
     }));
   };
 
-  // Função para enviar o formulário
   const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setIsSubmitting(true);
