@@ -1,4 +1,4 @@
-![luizdevsite](https://github.com/user-attachments/assets/130a1d88-0010-4826-9d97-ef67c60f715a)# 🚀 Luiz Henrique - Full Stack Developer Portfolio
+# 🚀 Luiz Henrique - Full Stack Developer Portfolio
 
 Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e experiência como Desenvolvedor Full Stack, com foco em tecnologias modernas e uma experiência de usuário intuitiva e responsiva.
 
