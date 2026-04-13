@@ -1,36 +1,42 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🚀 Luiz Henrique - Full Stack Developer Portfólio
 
-## Getting Started
+Bem-vindo ao meu portfólio pessoal! Este projeto foi desenvolvido para apresentar minhas habilidades, projetos e experiência como Desenvolvedor Full Stack, com foco em tecnologias modernas e uma experiência de usuário intuitiva e responsiva.
 
-First, run the development server:
+## ✨ Live Demo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+Explore o portfólio em funcionamento aqui: "em breve"
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 📸 Visão Geral (Hero Section)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![luizdevsite](https://github.com/user-attachments/assets/a5c18786-6d2e-4647-af3b-99527358e634)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+## 🌟 Principais Features
 
-To learn more about Next.js, take a look at the following resources:
+- **Design Moderno e Responsivo:** Layout adaptável a qualquer dispositivo (desktop, tablet, mobile).
+- **Animação ASCII Dinâmica:** Uma animação de "chuva" interativa na seção "About Me", adicionando um toque tecnológico único.
+- **Galeria de Projetos Interativa:** Apresentação visual dos principais projetos com detalhes, tecnologias utilizadas e links para demo e GitHub.
+- **Formulário de Contato Profissional:** Facilita o contato direto, com validação e proteção contra spam (Rate Limiting).
+- **Navegação Suave:** Experiência de usuário otimizada com rolagem suave entre as seções.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tecnologias e Ferramentas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Este portfólio foi construído utilizando uma stack robusta e moderna:
 
-## Deploy on Vercel
+- **Next.js:** Framework React para aplicações web de alto desempenho.
+- **React:** Biblioteca JavaScript para construção de interfaces de usuário.
+- **TypeScript:** Superset do JavaScript que adiciona tipagem estática.
+- **Tailwind CSS:** Framework CSS utilitário para estilização rápida e responsiva.
+- **React Icons:** Biblioteca de ícones para integrar facilmente ícones de diversas fontes.
+- **Resend:** Plataforma para envio de e-mails transacionais (formulário de contato).
+- **ASCII Animation:** Implementação customizada de animação ASCII para um toque visual único.
+- **Rate Limiting:** Proteção contra spam no formulário de contato.
+- **Vercel:** Plataforma de deploy e hospedagem serverless de alta performance.
+- **Git & GitHub:** Controle de versão e hospedagem do código-fonte.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Estou sempre aberto a novas conexões e oportunidades. Sinta-se à vontade para entrar em contato:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- **LinkedIn:** https://www.linkedin.com/in/luizhenriquecomunicador/
+- **Email:** [luizhn1703@gmail.com](mailto:luizhn1703@gmail.com)
+
+---
