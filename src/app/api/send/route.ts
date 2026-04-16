@@ -41,17 +41,11 @@ export async function POST(request: Request) {
     const sanitizedMessage = message.trim();
     const sanitizedCompany = company?.trim() || "Not provided";
 
-    console.log("Sending email with:", {
-      from: "onboarding@resend.dev",
-      to: sanitizedEmail,
-      fullName: sanitizedFullName,
-      company: sanitizedCompany,
-    });
-
     const { data, error } = await resend.emails.send({
-      from: "onboarding@resend.dev",
-      to: sanitizedEmail,
+      from: "Contato <contato@luizdev.com>",
+      to: "luizhn1703@gmail.com",
       subject: `New Contact from ${sanitizedFullName}`,
+      replyTo: sanitizedEmail,
       react: EmailTemplate({
         fullName: sanitizedFullName,
         email: sanitizedEmail,
@@ -71,7 +65,6 @@ export async function POST(request: Request) {
       );
     }
 
-    console.log("Email sent successfully:", data);
     return Response.json(
       {
         success: true,
