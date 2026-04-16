@@ -17,7 +17,7 @@ export const EmailTemplate = ({
     }}
   >
     <h1 style={{ color: "#00b300", marginBottom: "20px" }}>
-      New Contact from {fullName}
+      Novo contato de {fullName}
     </h1>
 
     <div style={{ marginTop: "20px", lineHeight: "1.8", color: "#333" }}>

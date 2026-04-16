@@ -1,4 +1,5 @@
 import { EmailTemplate } from "@/components/email-template";
+import { EmailTemplateReply } from "@/components/email-templateReply";
 import { Resend } from "resend";
 
 interface ContactRequest {
@@ -41,18 +42,28 @@ export async function POST(request: Request) {
     const sanitizedMessage = message.trim();
     const sanitizedCompany = company?.trim() || "Not provided";
 
-    const { data, error } = await resend.emails.send({
-      from: "Contato <contato@luizdev.com>",
-      to: "luizhn1703@gmail.com",
-      subject: `New Contact from ${sanitizedFullName}`,
-      replyTo: sanitizedEmail,
-      react: EmailTemplate({
-        fullName: sanitizedFullName,
-        email: sanitizedEmail,
-        company: sanitizedCompany,
-        message: sanitizedMessage,
-      }),
-    });
+    const { data, error } = await resend.batch.send([
+      {
+        from: "luizdev.com <contato@luizdev.com>",
+        to: "luizhn1703@gmail.com",
+        subject: `Novo contato de ${sanitizedFullName}`,
+        replyTo: sanitizedEmail,
+        react: EmailTemplate({
+          fullName: sanitizedFullName,
+          email: sanitizedEmail,
+          company: sanitizedCompany,
+          message: sanitizedMessage,
+        }),
+      },
+      {
+        from: "Luiz Dev <contato@luizdev.com>",
+        to: sanitizedEmail,
+        subject: `Olá ${sanitizedFullName}, recebi sua mensagem!`,
+        react: EmailTemplateReply({
+          fullName: sanitizedFullName,
+        }),
+      },
+    ]);
 
     if (error) {
       console.error("Resend API Error:", error);
