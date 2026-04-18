@@ -45,7 +45,7 @@ export async function POST(request: Request) {
     const { data, error } = await resend.batch.send([
       {
         from: "luizdev.com <contato@luizdev.com>",
-        to: "luizhn1703@gmail.com",
+        to: "luizdeveloper17@gmail.com",
         subject: `Novo contato de ${sanitizedFullName}`,
         replyTo: sanitizedEmail,
         react: EmailTemplate({
