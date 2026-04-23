@@ -6,6 +6,8 @@ import "../../public/flowist-preview.gif";
 import "../../public/landingpro-preview.gif";
 import "../../public/api-preview.png";
 
+import { formatWhatsApp } from "../components/formatWhatsApp";
+
 import { useState, useEffect } from "react";
 import {
   SiCypress,
@@ -21,7 +23,6 @@ import {
   SiReact,
   SiTailwindcss,
   SiTypescript,
-  SiWhatsapp,
 } from "react-icons/si";
 import {
   FiMail,
@@ -44,6 +45,8 @@ export default function Home() {
     email: "",
     company: "",
     message: "",
+    contactMethod: "email",
+    phone: "",
   });
 
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -111,9 +114,12 @@ export default function Home() {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
   ) => {
     const { name, value } = e.target;
+
+    const finalValue = name === "phone" ? formatWhatsApp(value) : value;
+
     setFormData((prev) => ({
       ...prev,
-      [name]: value,
+      [name]: finalValue,
     }));
   };
 
@@ -139,6 +145,8 @@ export default function Home() {
           email: "",
           company: "",
           message: "",
+          contactMethod: "email",
+          phone: "",
         });
 
         setTimeout(() => setSubmitStatus(null), 5000);
@@ -434,23 +442,7 @@ export default function Home() {
 
               <div className="space-y-4">
                 <a
-                  href="https://wa.me/5513996074495?text=Olá%20Luiz,%20vi%20seu%20site%20e%20gostaria%20de%20conversar%20sobre%20um%20projeto."
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center gap-4 p-4 bg-transparent border border-[#00FF00]/30 hover:border-[#00FF00] transition-transform hover:scale-101 duration-200 rounded-lg hover:bg-[#00FF00]/5 group"
-                >
-                  <SiWhatsapp
-                    size={24}
-                    className="text-[#25D366] group-hover:scale-110 transition-transform"
-                  />
-                  <div>
-                    <p className="font-semibold text-white">WhatsApp</p>
-                    <p className="text-sm text-gray-400">Quick chat</p>
-                  </div>
-                </a>
-
-                <a
-                  href="mailto:luizhn1703@gmail.com"
+                  href="mailto:luizdeveloper17@gmail.com"
                   className="flex items-center gap-4 p-4 bg-transparent border border-[#00FF00]/30 hover:border-[#00FF00] transition-transform hover:scale-101 duration-200 rounded-lg hover:bg-[#00FF00]/5 group"
                 >
                   <FiMail
@@ -485,8 +477,7 @@ export default function Home() {
               <div className="mt-12 p-4 bg-[#00FF00]/5 border border-[#00FF00]/20 rounded-lg">
                 <p className="text-sm text-gray-300">
                   <span className="text-[#00FF00] font-semibold">💡 Tip:</span>{" "}
-                  For the fastest response, try WhatsApp or fill out the form on
-                  the right.
+                  For a faster response, enter your WhatsApp number in the form
                 </p>
               </div>
             </div>
@@ -552,6 +543,58 @@ export default function Home() {
                     className="w-full px-4 py-3 bg-tranparent border border-[#00FF00]/30 focus:outline-none focus:border-[#00FF00]  rounded-lg text-white placeholder-gray-  transition-all"
                   />
                 </div>
+
+                <div className="space-y-3">
+                  <label className="block text-sm font-medium text-gray-300">
+                    How do you prefer I contact you? *
+                  </label>
+                  <div className="flex gap-6">
+                    <label className="flex items-center gap-2 cursor-pointer text-white">
+                      <input
+                        type="radio"
+                        name="contactMethod"
+                        value="email"
+                        checked={formData.contactMethod === "email"}
+                        onChange={handleInputChange}
+                        className="w-4 h-4 accent-[#00FF00]"
+                      />
+                      <span>E-mail</span>
+                    </label>
+                    <label className="flex items-center gap-2 cursor-pointer text-white">
+                      <input
+                        type="radio"
+                        name="contactMethod"
+                        value="whatsapp"
+                        checked={formData.contactMethod === "whatsapp"}
+                        onChange={handleInputChange}
+                        className="w-4 h-4 accent-[#00FF00]"
+                      />
+                      <span>WhatsApp</span>
+                    </label>
+                  </div>
+                </div>
+
+                {formData.contactMethod === "whatsapp" && (
+                  <div className="animate-in fade-in slide-in-from-top-2 duration-300">
+                    <label
+                      htmlFor="phone"
+                      className="block text-sm font-medium text-gray-300 mb-2"
+                    >
+                      WhatsApp Number *
+                    </label>
+                    <input
+                      type="tel"
+                      id="phone"
+                      name="phone"
+                      value={formData.phone}
+                      onChange={handleInputChange}
+                      required
+                      maxLength={15}
+                      placeholder="(00) 00000-0000"
+                      className="w-full px-4 py-3 bg-transparent border border-[#00FF00]/30 focus:outline-none focus:border-[#00FF00] rounded-lg text-white placeholder-gray-500 transition-all"
+                    />
+                  </div>
+                )}
 
                 <div>
                   <label

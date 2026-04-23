@@ -7,6 +7,8 @@ interface ContactRequest {
   email: string;
   company?: string;
   message: string;
+  contactMethod: string;
+  phone?: string;
 }
 
 if (!process.env.RESEND_API_KEY) {
@@ -18,7 +20,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 export async function POST(request: Request) {
   try {
     const body: ContactRequest = await request.json();
-    const { fullName, email, company, message } = body;
+    const { fullName, email, company, message, contactMethod, phone } = body;
 
     if (!fullName || !email || !message) {
       console.error("Missing required fields:", { fullName, email, message });
@@ -53,6 +55,8 @@ export async function POST(request: Request) {
           email: sanitizedEmail,
           company: sanitizedCompany,
           message: sanitizedMessage,
+          contactMethod,
+          phone,
         }),
       },
       {

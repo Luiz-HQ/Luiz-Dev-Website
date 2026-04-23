@@ -3,11 +3,15 @@ export const EmailTemplate = ({
   email,
   company,
   message,
+  contactMethod,
+  phone,
 }: {
   fullName: string;
   email: string;
   company?: string;
   message: string;
+  contactMethod?: string;
+  phone?: string;
 }) => (
   <div
     style={{
@@ -27,7 +31,19 @@ export const EmailTemplate = ({
           {email}
         </a>
       </p>
-
+      {contactMethod === "whatsapp" && (
+        <p>
+          <strong>WhatsApp:</strong>{" "}
+          <a
+            href={`https://wa.me/${phone?.replace(/\D/g, "")}?text=${encodeURIComponent(
+              `Olá ${fullName}! Recebi seu contato através do meu site${company && company !== "Not provided" ? ` referente à empresa ${company}` : ""}. Como posso te ajudar hoje?`,
+            )}`}
+            style={{ color: "#00b300" }}
+          >
+            {phone}
+          </a>
+        </p>
+      )}
       <p style={{ marginBottom: "10px" }}>
         <strong>Company:</strong> {company || "Not provided"}
       </p>
