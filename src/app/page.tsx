@@ -7,6 +7,7 @@ import "../../public/landingpro-preview.gif";
 import "../../public/api-preview.png";
 
 import { formatWhatsApp } from "../components/formatWhatsApp";
+import { SkillsSection } from "../components/SkillsSection";
 
 import { useState, useEffect } from "react";
 import {
@@ -31,9 +32,11 @@ import {
   FiX,
   FiExternalLink,
   FiGithub as FiGithubIcon,
+  FiGithub,
 } from "react-icons/fi";
 import BinaryRainAnimation from "../components/FallingAsciiAnimation";
 import { FaLinkedin } from "react-icons/fa";
+import { FaLaptopCode } from "react-icons/fa6";
 
 export default function Home() {
   const textToType = "FULL STACK DEVELOPER";
@@ -220,12 +223,20 @@ export default function Home() {
             <p className="text-gray-300 text-lg mt-4 max-w-md mx-auto md:mx-0">
               Transforming ideas into robust and scalable digital solutions.
             </p>
-            <button
-              onClick={() => (window.location.href = "#projects")}
-              className="cursor-pointer mt-8 px-8 py-3 bg-[#00FF00] text-[#050505] font-bold rounded-lg hover:bg-green-400 transition-transform hover:scale-105 duration-200"
-            >
-              See Projects
-            </button>
+            <div className="flex gap-x-4 sm:gap-x-6 justify-center md:justify-start mt-6">
+              <button
+                onClick={() => (window.location.href = "#projects")}
+                className="cursor-pointer mt-8 px-8 py-3 bg-[#00FF00] text-[#2a2a2a] font-bold rounded-lg hover:bg-[#00FF00]/90 transition-transform hover:scale-105 duration-200"
+              >
+                See Projects
+              </button>
+              <button
+                onClick={() => (window.location.href = "#skills")}
+                className="cursor-pointer mt-8 px-8 py-3 bg-trasnparent border text-[#00FF00] font-bold rounded-lg transition-transform hover:scale-105 duration-200"
+              >
+                See Skills
+              </button>
+            </div>
           </div>
 
           <div className="mt-8 md:mt-0 shrink-0">
@@ -349,7 +360,7 @@ export default function Home() {
             </h2>
             <div className="h-1 w-20 bg-[#00FF00]"></div>
           </div>
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-24 items-start">
             <div className="flex justify-center items-center lg:justify-start w-full">
               <BinaryRainAnimation />
             </div>
@@ -395,17 +406,30 @@ export default function Home() {
                   technical creativity with product vision to deliver
                   high-impact solutions.
                 </p>
-                <a
-                  href="https://www.linkedin.com/in/luizhenriquecomunicador/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-[#00FF00] font-semibold mt-6 flex gap-x-2"
-                >
-                  <FaLinkedin size={24} className="text-[#0077B5]" />
-                  Let&apos;s connect!
-                </a>
+                <div className="text-[#00FF00] flex items-center justify-between mt-6 font-semibold">
+                  <a
+                    href="https://www.linkedin.com/in/luizhenriquecomunicador/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex gap-x-2"
+                  >
+                    <FaLinkedin size={24} className="text-[#0077B5]" />
+                    Let&apos;s connect!
+                  </a>
+                  <a
+                    href="#skills"
+                    className="hover:text-[#00FF00] flex gap-x-2 transition-colors duration-200"
+                  >
+                    <FaLaptopCode size={24} className="text-white" />
+                    Skills
+                  </a>
+                </div>
               </div>
             </div>
+          </div>
+
+          <div id="skills" className="flex flex-col items-center pt-24">
+            <SkillsSection />
           </div>
         </div>
       </section>
@@ -441,6 +465,24 @@ export default function Home() {
               </div>
 
               <div className="space-y-4">
+                <a
+                  href="https://github.com/Luiz-HQ"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-4 p-4 bg-transparent border border-[#00FF00]/30 hover:border-[#00FF00] transition-transform hover:scale-101 duration-200 rounded-lg hover:bg-[#00FF00]/5 group"
+                >
+                  <FiGithub
+                    size={24}
+                    className="text-white group-hover:scale-110 transition-transform"
+                  />
+                  <div>
+                    <p className="font-semibold text-white">GitHub</p>
+                    <p className="text-sm text-gray-400">
+                      View my repositories
+                    </p>
+                  </div>
+                </a>
+
                 <a
                   href="mailto:luizdeveloper17@gmail.com"
                   className="flex items-center gap-4 p-4 bg-transparent border border-[#00FF00]/30 hover:border-[#00FF00] transition-transform hover:scale-101 duration-200 rounded-lg hover:bg-[#00FF00]/5 group"
