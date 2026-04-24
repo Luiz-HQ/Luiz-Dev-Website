@@ -8,8 +8,7 @@ Explore o portfólio em funcionamento aqui: <a href="https://luizdev.com/" targe
 
 ## 📸 Visão Geral (Hero Section)
 
-![luizdevsite](https://github.com/user-attachments/assets/a5c18786-6d2e-4647-af3b-99527358e634)
-
+<img width="1918" height="943" alt="luizdevsiteoficial" src="https://github.com/user-attachments/assets/3b03dee5-7c80-4cda-9091-2bd43b2a9838" />
 
 ## 🌟 Principais Features
 
