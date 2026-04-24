@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import "../../public/profile.jpg";
+import "../../public/profile.png";
 import "../../public/flowist-preview.gif";
 import "../../public/landingpro-preview.gif";
 import "../../public/api-preview.png";
@@ -242,7 +242,7 @@ export default function Home() {
           <div className="mt-8 md:mt-0 shrink-0">
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <Image
-                src="/profile.jpg"
+                src="/profile.png"
                 alt="Luiz Henrique"
                 fill
                 className="rounded-full border-4 border-[#00FF00] shadow-[0_0_20px_rgba(0,255,0,0.3)] object-cover"
