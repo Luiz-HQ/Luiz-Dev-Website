@@ -14,9 +14,10 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Luiz.Dev",
+  title:
+    "Luiz Henrique - Desenvolvedor Web Full Stack | Desenvolvedor de Software | Programador",
   description:
-    "Luiz Henrique - Full Stack Developer Website - Transforming ideas into robust and scalable digital solutions.",
+    "Desenvolvedor Full Stack com +3 anos de experiência em React e Node.js.",
 };
 
 export default function RootLayout({

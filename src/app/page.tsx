@@ -78,6 +78,8 @@ export default function Home() {
   const projects = [
     {
       title: "Flowist",
+      seoImageAlt:
+        "desenvolvedor full stack, desenvolvedor de software, desenvolvedor web, programador",
       description:
         "Kanban-style task manager for optimizing workflow and increasing daily productivity.",
       image: "/flowist-preview.gif",
@@ -95,6 +97,8 @@ export default function Home() {
     },
     {
       title: "LandingPro",
+      seoImageAlt:
+        "desenvolvedor front end, desenvolvedor de software, desenvolvedor web, programador",
       description:
         "A modern landing page used for conversions, integrated directly with WhatsApp.",
       image: "/landingpro-preview.gif",
@@ -104,6 +108,8 @@ export default function Home() {
     },
     {
       title: "PayCore API",
+      seoImageAlt:
+        "desenvolvedor back end, desenvolvedor de software, desenvolvedor web, programador",
       description:
         "Robust API for processing financial transactions with a focus on security and scalability.",
       image: "/api-preview.png",
@@ -243,7 +249,7 @@ export default function Home() {
             <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96">
               <Image
                 src="/profile.png"
-                alt="Luiz Henrique"
+                alt="Luiz Henrique, desenvolvedor full stack, desenvolvedor de software, desenvolvedor web, programador "
                 fill
                 className="rounded-full border-4 border-[#00FF00] shadow-[0_0_20px_rgba(0,255,0,0.3)] object-cover"
                 priority
@@ -307,7 +313,7 @@ export default function Home() {
                   <div className="absolute inset-0 group-hover:bg-transparent transition-colors z-10"></div>
                   <Image
                     src={project.image}
-                    alt={project.title}
+                    alt={project.seoImageAlt}
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-110"
                   />
