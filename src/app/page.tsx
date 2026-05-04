@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import "../../public/profile.png";
-import "../../public/flowist-preview.gif";
+import "../../public/flowist.gif";
 import "../../public/landingpro-preview.gif";
 import "../../public/api-preview.png";
 
@@ -82,7 +82,7 @@ export default function Home() {
         "desenvolvedor full stack, desenvolvedor de software, desenvolvedor web, programador",
       description:
         "Kanban-style task manager for optimizing workflow and increasing daily productivity.",
-      image: "/flowist-preview.gif",
+      image: "/flowist.gif",
       deploy: "https://flowist-seven.vercel.app/",
       github: "https://github.com/Luiz-HQ/Flowist",
       techs: [
